@@ -7,6 +7,7 @@ const Home = ()=>import('views/home/Home')
 const Category = ()=>import('views/category/Category')
 const Cart = ()=>import('views/cart/Cart')
 const Profile = ()=>import('views/profile/Profile')
+const Detail = ()=>import('views/detail/Detail')
 
 export default new Router({
   routes: [
@@ -29,6 +30,10 @@ export default new Router({
     {
       path: '/proflie',
       component:Profile
+    },
+    {
+      path:'/detail/:id',
+      component:Detail
     }
   ],
   mode:'history'
